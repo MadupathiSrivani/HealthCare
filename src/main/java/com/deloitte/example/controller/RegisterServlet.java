@@ -19,6 +19,12 @@ public class RegisterServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final Pattern MOBILE_PATTERN = Pattern.compile("^\\d{10}$");
     private static final Pattern IDPROOF_PATTERN = Pattern.compile("^[A-Za-z0-9]{12}$");
+    
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Forward to login.jsp when GET request is made
+        request.getRequestDispatcher("register.jsp").forward(request, response);
+    }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

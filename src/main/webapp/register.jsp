@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="header">
-    <h1 class="header-title">Expense Management System</h1>
+    <h1 class="header-title">Health Care</h1>
 </div>
 <br><br>
  	<div class="main-content">
